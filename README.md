@@ -2,7 +2,7 @@
 
 **TASK:** build an interactive dashboard to explore the [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/), which catalogs the microbes that colonize human navels. The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
-## Methods
+## Methods Summary
 1. D3 library to read in `samples.json`.
 
 2. Created a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
@@ -17,14 +17,11 @@
     * Use `otu_ids` for the marker colors.
     * Use `otu_labels` for the text values.
 
-4. Display the sample metadata, i.e., an individual's demographic information.
+4. Display: 
+    * the sample metadata, i.e., an individual's demographic information.
+    * each key-value pair from the metadata JSON object somewhere on the page.
 
-5. Display each key-value pair from the metadata JSON object somewhere on the page.
-
-6. Update all of the plots any time that a new sample is selected.
-
-## Deployment
-* Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to your deployment and your GitHub repo.
+6. When a new sample is selected, the plots update.
 
 ### Sources
 Hulcr, J. et al.(2012) _A Jungle in There: Bacteria in Belly Buttons are Highly Diverse, but Predictable_. Retrieved from: [http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/](http://robdunnlab.com/projects/belly-button-biodiversity/results-and-data/)
