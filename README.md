@@ -5,6 +5,18 @@
 ### Methods Summary
 1. D3 library used to read in `samples.json`.
 
+``` ruby
+d3.json(link).then((data) => {
+    var dropdown = d3.select("#selDataset");
+    data.names.forEach((sample) => {
+      dropdown
+        .append("option")
+        .text(sample)
+        .property("value", sample);
+    });
+})
+```
+
 2. Created a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
     * `sample_values` as the values for the bar chart.
     * `otu_ids` as the labels for the bar chart.
